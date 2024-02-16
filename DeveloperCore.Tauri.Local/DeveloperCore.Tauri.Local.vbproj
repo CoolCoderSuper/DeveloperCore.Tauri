@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>DeveloperCore.Tauri.Local</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+	
+  <ItemGroup>
+	<PackageReference Include="Watson" Version="6.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeveloperCore.Tauri\DeveloperCore.Tauri.vbproj" />
+  </ItemGroup>
+
+</Project>

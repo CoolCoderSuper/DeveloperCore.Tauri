@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>DeveloperCore.Tauri.WinForms</RootNamespace>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2277.86" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DeveloperCore.Tauri\DeveloperCore.Tauri.vbproj" />
+    </ItemGroup>
+</Project>

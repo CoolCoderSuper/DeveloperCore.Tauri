@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<RootNamespace>TestApp</RootNamespace>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ClientDir>../test-app-solid</ClientDir>
+		<ClientOutput>../test-app-solid/dist</ClientOutput>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="CommandLineParser" Version="2.9.1" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2277.86" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DeveloperCore.Tauri.Dev\DeveloperCore.Tauri.Dev.vbproj" />
+		<ProjectReference Include="..\DeveloperCore.Tauri.Local\DeveloperCore.Tauri.Local.vbproj" />
+		<ProjectReference Include="..\DeveloperCore.Tauri.WinForms\DeveloperCore.Tauri.WinForms.vbproj" />
+		<ProjectReference Include="..\DeveloperCore.Tauri\DeveloperCore.Tauri.vbproj" />
+	</ItemGroup>
+
+</Project>

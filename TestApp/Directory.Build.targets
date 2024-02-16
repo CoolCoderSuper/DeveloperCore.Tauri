@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<ClientBuildCommand Condition="'$(ClientBuildCommand)' == ''">npm run build</ClientBuildCommand>
+	</PropertyGroup>
+	<Target Name="BuildClient" AfterTargets="Build" Condition="$(Configuration) == 'Release'">
+		<Message Text="Building client..." />
+		<Exec Command="$(ClientBuildCommand)" WorkingDirectory="$(ClientDir)"/>
+		<ItemGroup>
+			<ClientSourceFiles Include="$(ClientOutput)\**\*.*"/>
+		</ItemGroup>
+		<Copy SourceFiles="@(ClientSourceFiles)" DestinationFolder="$(OutputPath)\%(RecursiveDir)"/>
+	</Target>
+</Project>

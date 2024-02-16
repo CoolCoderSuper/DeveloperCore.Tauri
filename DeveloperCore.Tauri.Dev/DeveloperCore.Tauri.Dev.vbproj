@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>DeveloperCore.Tauri.Dev</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeveloperCore.Tauri\DeveloperCore.Tauri.vbproj" />
+  </ItemGroup>
+
+</Project>
